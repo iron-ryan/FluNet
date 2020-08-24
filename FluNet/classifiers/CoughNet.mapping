@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="batchnorm_3" out_port_id="batchnorm_3"/>
+		<IR id="10" name="conv_2/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv_1_W" out_port_id="conv_1_W"/>
+		<IR id="1" name="imageinput/reverse_input_channels/Concat1175_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool_1" out_port_id="maxpool_1"/>
+		<IR id="6" name="maxpool_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv_3_W" out_port_id="conv_3_W"/>
+		<IR id="13" name="batchnorm_2/mean/Fused_Mul_831833_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="relu_3" out_port_id="relu_3"/>
+		<IR id="17" name="relu_3" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="maxpool_2" out_port_id="maxpool_2"/>
+		<IR id="12" name="maxpool_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="softmax" out_port_id="0"/>
+		<IR id="26" name="softmax" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="batchnorm_2" out_port_id="batchnorm_2"/>
+		<IR id="16" name="conv_3/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="relu_1" out_port_id="relu_1"/>
+		<IR id="5" name="relu_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="relu_2" out_port_id="relu_2"/>
+		<IR id="11" name="relu_2" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fc_W" out_port_id="fc_W"/>
+		<IR id="18" name="onnx_initializer_node_fc_W/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="imageinput" out_port_id="imageinput"/>
+		<IR id="0" name="imageinput" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="conv_2_W" out_port_id="conv_2_W"/>
+		<IR id="7" name="batchnorm_3/mean/Fused_Mul_827829_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="batchnorm_1" out_port_id="batchnorm_1"/>
+		<IR id="4" name="conv_1/Fused_Add_" out_port_id="2"/>
+	</map>
+</mapping>
